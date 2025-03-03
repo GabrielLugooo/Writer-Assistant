@@ -35,6 +35,11 @@ La aplicación cuenta con una interfaz gráfica moderna desarrollada con Tkinter
 
 ### Proyecto
 
+#### Vista Previa
+
+<img align="center" src="" alt="WritterAssistant_01" />
+<img align="center" src="" alt="WritterAssistant_03" />
+
 #### Código con Comentarios (Español)
 
 ```python
