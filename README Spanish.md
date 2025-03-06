@@ -37,8 +37,9 @@ La aplicación cuenta con una interfaz gráfica moderna desarrollada con Tkinter
 
 #### Vista Previa
 
-<img align="center" src="" alt="WritterAssistant_01" />
-<img align="center" src="" alt="WritterAssistant_03" />
+<img align="center" src="https://i.imgur.com/HJdRkEd.jpeg" alt="WritterAssistant_01" />
+<img align="center" src="https://i.imgur.com/cNq3MCB.jpeg" alt="WritterAssistant_02" />
+<img align="center" src="https://i.imgur.com/xuizL4G.jpeg" alt="WritterAssistant_03" />
 
 #### Código con Comentarios (Español)
 
