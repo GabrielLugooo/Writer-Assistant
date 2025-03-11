@@ -24,14 +24,14 @@ The application features a modern graphical user interface (GUI) built with Tkin
 ### Tools Used
 
 ![Static Badge](https://img.shields.io/badge/Python-000000?logo=python&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=tkinter&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=googletranslate&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=pyttsx3&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=threading&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=webbrowser&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=filedialog&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=googledocs&logoSize=auto)
-![Static Badge](https://img.shields.io/badge/-000000?logo=mesagebox&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/TKinter-000000?logo=tkinter&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/Speech%20Recognition-000000?logo=googletranslate&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/Pyttsx3-000000?logo=pyttsx3&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/Threading-000000?logo=threading&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/Webbrowser-000000?logo=webbrowser&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/Filedialog-000000?logo=filedialog&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/Google%20Docs-000000?logo=googledocs&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/MessageBox-000000?logo=mesagebox&logoSize=auto)
 
 - Python
 - `Tkinter` (GUI development)
