@@ -45,8 +45,9 @@ The application features a modern graphical user interface (GUI) built with Tkin
 
 #### Preview
 
-<img align="center" src="" alt="WritterAssistant_01" />
-<img align="center" src="" alt="WritterAssistant_03" />
+<img align="center" src="https://i.imgur.com/HJdRkEd.jpeg" alt="WritterAssistant_01" />
+<img align="center" src="https://i.imgur.com/cNq3MCB.jpeg" alt="WritterAssistant_02" />
+<img align="center" src="https://i.imgur.com/xuizL4G.jpeg" alt="WritterAssistant_03" />
 
 #### Code with Comments (English)
 
