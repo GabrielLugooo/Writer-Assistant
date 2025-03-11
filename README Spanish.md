@@ -24,6 +24,14 @@ La aplicación cuenta con una interfaz gráfica moderna desarrollada con Tkinter
 ### Herramientas Usadas
 
 ![Static Badge](https://img.shields.io/badge/Python-000000?logo=python&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=tkinter&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=googletranslate&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=pyttsx3&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=threading&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=webbrowser&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=filedialog&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=googledocs&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/-000000?logo=mesagebox&logoSize=auto)
 
 - Python
 - `Tkinter` (desarrollo de GUI)
