@@ -272,7 +272,7 @@ To isolate project dependencies, it is recommended to create a virtual environme
    venv\Scripts\activate
    ```
 
-   _On macOS/Linux_ (also in Git Bash in VSCode within Win10):
+   _On macOS/Linux (also in Git Bash in VSCode within Win10):_
 
    ```sh
    source venv/bin/activate
@@ -319,13 +319,13 @@ To package the project into a Windows executable, follow these steps:
 
 3. When you run PyInstaller, several additional files and folders are generated:
 
-The `build/` folder contains temporary files used during the packaging process.
+   The `build/` folder contains temporary files used during the packaging process.
 
-The `.spec` file is automatically generated with the project specifications; you can customize it if you have the knowledge (look for a YouTube tutorial).
+   The `.spec` file is automatically generated with the project specifications; you can customize it if you have the knowledge (look for a YouTube tutorial).
 
-The `dist/` folder contains the final `.exe` executable, ready for distribution and use.
+   The `dist/` folder contains the final `.exe` executable, ready for distribution and use.
 
-Only the file inside `dist/` is required to run the application.
+   Only the file inside `dist/` is required to run the application.
 
 **IMPORTANT:** Inside the `dist/` folder is a fully functional `writerassist.exe` executable.
 

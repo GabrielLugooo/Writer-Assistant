@@ -258,43 +258,43 @@ Para aislar las dependencias del proyecto, se recomienda crear un entorno virtua
 
 1. Abrir una terminal en la carpeta del proyecto y ejecutar:
 
-```sh
-python -m venv venv
-```
+   ```sh
+   python -m venv venv
+   ```
 
-Esto te genera la carpeta del entorno virtual `venv`
+   Esto te genera la carpeta del entorno virtual `venv`
 
 2. Activar el entorno virtual:
 
-- En Windows (Bash CMD):
+   _En Windows (Bash CMD):_
 
-```sh
-venv\Scripts\activate
-```
+   ```sh
+   venv\Scripts\activate
+   ```
 
-- En macOS/Linux (También en Git Bash en VSCode dentro de Win10):
+   _En macOS/Linux (También en Git Bash en VSCode dentro de Win10):_
 
-```sh
-source venv/bin/activate
-```
+   ```sh
+   source venv/bin/activate
+   ```
 
 3. Instalar las dependencias necesarias:
 
-Antes, asegurarse de haber creado el archivo `requirements.txt` con la lista de librerias/dependecias
-necesarias para que el proyecto se ejecute con su respectiva versión, por ej.: dentro del archivo:
+   Antes, asegurarse de haber creado el archivo `requirements.txt` con la lista de librerias/dependecias
+   necesarias para que el proyecto se ejecute con su respectiva versión, por ej.: dentro del archivo:
 
-```txt
-SpeechRecognition==3.14.1
-pyttsx3==2.98
-pyaudio==0.2.14
-pyinstaller==6.12.0
-```
+   ```txt
+   SpeechRecognition==3.14.1
+   pyttsx3==2.98
+   pyaudio==0.2.14
+   pyinstaller==6.12.0
+   ```
 
-Luego:
+   Luego:
 
-```sh
-pip install -r requirements.txt
-```
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 **IMPORTANTE:** POR SEGURIDAD en este repositorio se borró la `API KEY` DE GOOGLE `SpeechRecognition` en : `venv/Lib/site-packages/speech_recognition/recognizers/google.py`, ya que solamente es de muestra de codigo funcionando correctamente con proposito educacional, para que funcione en tu `PC` deberias iniciar tu propio `venv`.
 
@@ -304,29 +304,29 @@ Para empaquetar el proyecto en un ejecutable de Windows, sigue estos pasos:
 
 1. Asegurarse de tener instalado `pyinstaller`:
 
-```sh
-pip install pyinstaller
-```
+   ```sh
+   pip install pyinstaller
+   ```
 
 2. Ejecutar el siguiente comando para generar el `.exe`:
 
-```sh
-pyinstaller --onefile --windowed main.py
-```
+   ```sh
+   pyinstaller --onefile --windowed main.py
+   ```
 
-- `--onefile`: Crea un solo archivo ejecutable.
+   `--onefile`: Crea un solo archivo ejecutable.
 
-- `--windowed`: Evita que se abra una consola de terminal al ejecutar.
+   `--windowed`: Evita que se abra una consola de terminal al ejecutar.
 
 3. Al ejecutar PyInstaller, se generan varios archivos y carpetas adicionales:
 
-La carpeta `build/` contiene archivos temporales utilizados durante el proceso de empaquetado.
+   La carpeta `build/` contiene archivos temporales utilizados durante el proceso de empaquetado.
 
-El archivo `.spec` se genera automáticamente con las especificaciones del proyecto, lo podés personalizar si tenes el conocimiento (busca un tutorial de youtube).
+   El archivo `.spec` se genera automáticamente con las especificaciones del proyecto, lo podés personalizar si tenes el conocimiento (busca un tutorial de youtube).
 
-La carpeta `dist/` es donde se encuentra el ejecutable final `.exe`, listo para su distribución y uso.
+   La carpeta `dist/` es donde se encuentra el ejecutable final `.exe`, listo para su distribución y uso.
 
-Solo el archivo dentro de `dist/` es necesario para ejecutar la aplicación.
+   Solo el archivo dentro de `dist/` es necesario para ejecutar la aplicación.
 
 **IMPORTANTE:** Dentro de la carpeta `dist/` se encuentra un ejecutable `writerassist.exe` totalmente funcional.
 
