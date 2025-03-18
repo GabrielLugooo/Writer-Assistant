@@ -2,8 +2,8 @@
 
 # WRITER ASSISTANT
 
-<a href="https://github.com/GabrielLugooo/Writer-Assistant" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/English%20Writer%20Assistant-000000" alt="English Writer Assistant" /></a>
-<a href="https://github.com/GabrielLugooo/Writer-Assistant/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Spanish%20Writer%20Assistant-green" alt="Spanish Writer Assistant" /></a>
+<a href="https://github.com/GabrielLugooo/Writer-Assistant-Public" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/English%20Writer%20Assistant-000000" alt="English Writer Assistant" /></a>
+<a href="https://github.com/GabrielLugooo/Writer-Assistant-Public/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Spanish%20Writer%20Assistant-green" alt="Spanish Writer Assistant" /></a>
 
 ### Objective
 

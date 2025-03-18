@@ -2,8 +2,8 @@
 
 # ASISTENTE DE ESCRITURA
 
-<a href="https://github.com/GabrielLugooo/Writer-Assistant/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Español-000000" alt="Asistente Escritura Español" /></a>
-<a href="https://github.com/GabrielLugooo/Writer-Assistant" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Inglés-green" alt="Asistente Escritura Inglés" /></a>
+<a href="https://github.com/GabrielLugooo/Writer-Assistant-Public/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Español-000000" alt="Asistente Escritura Español" /></a>
+<a href="https://github.com/GabrielLugooo/Writer-Assistant-Public" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Inglés-green" alt="Asistente Escritura Inglés" /></a>
 
 ### Objetivos
 
