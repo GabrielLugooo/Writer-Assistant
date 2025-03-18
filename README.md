@@ -258,44 +258,44 @@ To isolate project dependencies, it is recommended to create a virtual environme
 
 1. Open a terminal in the project folder and run:
 
-```sh
-python -m venv venv
-```
+   ```sh
+   python -m venv venv
+   ```
 
-This will create the `venv` virtual environment folder.
+   This will create the `venv` virtual environment folder.
 
 2. Activate the virtual environment:
 
-- On Windows (Bash CMD):
+   _On Windows_ (Bash CMD):
 
-```sh
-venv\Scripts\activate
-```
+   ```sh
+   venv\Scripts\activate
+   ```
 
-- On macOS/Linux (also in Git Bash in VSCode within Win10):
+   _On macOS/Linux_ (also in Git Bash in VSCode within Win10):
 
-```sh
-source venv/bin/activate
-```
+   ```sh
+   source venv/bin/activate
+   ```
 
 3. Install the necessary dependencies:
 
-First, make sure you have created the `requirements.txt` file with the list of libraries/dependencies required for the project to run with its respective version, e.g., within the file:
+   First, make sure you have created the `requirements.txt` file with the list of libraries/dependencies required for the project to run with its respective version, e.g., within the file:
 
-```txt
-SpeechRecognition==3.14.1
-pyttsx3==2.98
-pyaudio==0.2.14
-pyinstaller==6.12.0
-```
+   ```txt
+   SpeechRecognition==3.14.1
+   pyttsx3==2.98
+   pyaudio==0.2.14
+   pyinstaller==6.12.0
+   ```
 
-Then:
+   Then:
 
-```sh
-pip install -r requirements.txt
-```
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-**IMPORTANT:** FOR SECURITY, the GOOGLE `API KEY` `SpeechRecognition` has been deleted from this repository in: `venv/Lib/site-packages/speech_recognition/recognizers/google.py`, since it is only a sample of code working correctly for educational purposes. For it to work on your `PC` you should start your own `venv`.
+**IMPORTANT:** FOR SECURITY, the GOOGLE API KEY `SpeechRecognition` has been deleted from this repository in: `venv/Lib/site-packages/speech_recognition/recognizers/google.py`, since it is only a sample of code working correctly for educational purposes. For it to work on your `PC` you should start your own `venv`.
 
 #### Creating the Executable (`.exe`)
 
@@ -303,19 +303,19 @@ To package the project into a Windows executable, follow these steps:
 
 1. Make sure you have `pyinstaller` installed:
 
-```sh
-pip install pyinstaller
-```
+   ```sh
+   pip install pyinstaller
+   ```
 
 2. Run the following command to generate the `.exe`:
 
-```sh
-pyinstaller --onefile --windowed main.py
-```
+   ```sh
+   pyinstaller --onefile --windowed main.py
+   ```
 
-- `--onefile`: Creates a single executable file.
+   `--onefile`: Creates a single executable file.
 
-- `--windowed`: Prevents a terminal console from opening when running.
+   `--windowed`: Prevents a terminal console from opening when running.
 
 3. When you run PyInstaller, several additional files and folders are generated:
 
