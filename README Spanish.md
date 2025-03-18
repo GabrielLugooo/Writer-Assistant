@@ -296,6 +296,8 @@ Luego:
 pip install -r requirements.txt
 ```
 
+**IMPORTANTE:** POR SEGURIDAD en este repositorio se borró la `API KEY` DE GOOGLE `SpeechRecognition` en : `venv/Lib/site-packages/speech_recognition/recognizers/google.py`, ya que solamente es de muestra de codigo funcionando correctamente con proposito educacional, para que funcione en tu `PC` deberias iniciar tu propio `venv`.
+
 #### Creación del Ejecutable (`.exe`)
 
 Para empaquetar el proyecto en un ejecutable de Windows, sigue estos pasos:
@@ -325,6 +327,8 @@ El archivo `.spec` se genera automáticamente con las especificaciones del proye
 La carpeta `dist/` es donde se encuentra el ejecutable final `.exe`, listo para su distribución y uso.
 
 Solo el archivo dentro de `dist/` es necesario para ejecutar la aplicación.
+
+**IMPORTANTE:** Dentro de la carpeta `dist/` se encuentra un ejecutable `writerassist.exe` totalmente funcional.
 
 ### Limitaciones
 
