@@ -1,7 +1,9 @@
 
-# WritterAssistant
+# Writer Assistant
 
 # Importar la librerías necesarias
+import sys
+import os
 import tkinter as tk
 from tkinter import scrolledtext, filedialog, messagebox
 import speech_recognition as sr
@@ -95,9 +97,18 @@ def speak(message):
     engine.say(message)
     engine.runAndWait()
 
+# Verificar si el script está ejecutándose como un archivo empaquetado
+if getattr(sys, 'frozen', False):
+    # Si estamos ejecutando desde el .exe empaquetado, la ruta será diferente
+    icon_path = os.path.join(sys._MEIPASS, 'assets', 'writerassist.ico')
+else:
+    # Si estamos ejecutando el script en el entorno de desarrollo
+    icon_path = 'assets/writerassist.ico'
+
 # Configuración de la ventana principal de la aplicación
 root = tk.Tk()
-root.title("Asistente de Escritura")
+root.title("Writter Assistant")
+root.iconbitmap(icon_path) 
 root.geometry("900x600")
 root.minsize(800, 500)  # Tamaño mínimo
 root.config(bg="#e0e0e0")

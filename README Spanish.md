@@ -1,25 +1,32 @@
 <img align="center" src="https://media.licdn.com/dms/image/v2/D4D16AQGUNxQ7NSC05A/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1738695150340?e=1744243200&v=beta&t=oXX-ixT9bR3dJcYCLv4KBs5wjKFoeP0524kFGHQMYmQ" alt="gabriellugo" />
 
-# ASISTENTE DE VOZ
+# ASISTENTE DE ESCRITURA
 
-<a href="https://github.com/GabrielLugooo/Writter-Assistant/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Español-000000" alt="Asistente Escritura Español" /></a>
-<a href="https://github.com/GabrielLugooo/Writter-Assistant" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Inglés-green" alt="Asistente Escritura Inglés" /></a>
+<a href="https://github.com/GabrielLugooo/Writer-Assistant/blob/main/README%20Spanish.md" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Español-000000" alt="Asistente Escritura Español" /></a>
+<a href="https://github.com/GabrielLugooo/Writer-Assistant" target="_blank" rel="noreferrer noopener"> <img align="center" src="https://img.shields.io/badge/Asistente%20Escritura%20Inglés-green" alt="Asistente Escritura Inglés" /></a>
 
 ### Objetivos
 
-Assistente de Escritura es un asistente de escritura basado en voz diseñado para transcribir palabras habladas a texto de manera eficiente. Ofrece una experiencia de usuario fluida con reconocimiento de voz en tiempo real, guardado de texto e integración con Google Docs, lo que lo convierte en una herramienta ideal para escritores, estudiantes y profesionales que necesitan tomar notas sin usar las manos.
+Assistente de Escritura es un asistente de escritura basado en voz diseñado para transcribir palabras habladas a texto de manera eficiente mediante asistencia automatizada. Su propósito es facilitar la creación de textos organizados y bien estructurados, proporcionando una interfaz intuitiva para mejorar la experiencia de escritura.
 
-La aplicación cuenta con una interfaz gráfica moderna desarrollada con Tkinter e integra reconocimiento de voz, síntesis de texto a voz y funciones de administración del portapapeles. Al automatizar la entrada de texto mediante comandos de voz, mejora la productividad y la accesibilidad.
+Ofrece una experiencia de usuario fluida con reconocimiento de voz en tiempo real, guardado de texto e integración con `Google Docs`, lo que lo convierte en una herramienta ideal para Su implementación busca combinar funcionalidad y facilidad de uso para escritores, estudiantes, profesionales, programadores y cualquier persona que necesitan tomar notas sin usar las manos e interesada en mejorar su productividad.
+
+La aplicación cuenta con una interfaz gráfica moderna desarrollada con `Tkinter` e integra reconocimiento de voz `SpeechRecognition`, síntesis de texto a voz `text-to-speech` y funciones de administración del portapapeles. Al automatizar la entrada de texto mediante comandos de voz, mejora la productividad y la accesibilidad.
+
+Además, este proyecto permite explorar conceptos clave en el desarrollo de software, incluyendo la gestión de entornos virtuales, la creación de ejecutables y la optimización del flujo de trabajo en Python.
 
 ### Habilidades Aprendidas
 
-- Implementación de reconocimiento de voz con Python
-- Creación de interfaces gráficas con `Tkinter`
-- Gestión de multihilos para aplicaciones responsivas
-- Integración de funcionalidad de síntesis de voz (TTS)
-- Manejo de archivos para guardar texto
-- Automatización de navegador web para integración con Google Docs
-- Implementación de gestión del portapapeles en Python
+- Implementación de reconocimiento de voz con Python.
+- Creación de interfaces gráficas con `Tkinter`.
+- Gestión de multihilos para aplicaciones responsivas.
+- Integración de funcionalidad de síntesis de voz (TTS).
+- Manejo de archivos para guardar texto.
+- Automatización de navegador web para integración con Google Docs.
+- Implementación de gestión del portapapeles en Python.
+- Integración de bibliotecas externas en un entorno Python.
+- Creación y gestión de entornos virtuales con `venv`.
+- Configuración y empaquetado de aplicaciones Python en ejecutables `.exe`.
 
 ### Herramientas Usadas
 
@@ -32,6 +39,9 @@ La aplicación cuenta con una interfaz gráfica moderna desarrollada con Tkinter
 ![Static Badge](https://img.shields.io/badge/Filedialog-000000?logo=filedialog&logoSize=auto)
 ![Static Badge](https://img.shields.io/badge/Google%20Docs-000000?logo=googledocs&logoSize=auto)
 ![Static Badge](https://img.shields.io/badge/MessageBox-000000?logo=mesagebox&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/PyInstaller-000000?logo=pyinstaller&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/venv-000000?logo=venv&logoSize=auto)
+![Static Badge](https://img.shields.io/badge/.exe-000000?logo=dotexe&logoSize=auto)
 
 - Python
 - `Tkinter` (desarrollo de GUI)
@@ -40,6 +50,8 @@ La aplicación cuenta con una interfaz gráfica moderna desarrollada con Tkinter
 - `Threading` (gestión de tareas concurrentes)
 - `Webbrowser` (integración con Google Docs)
 - `FileDialog` y `MessageBox` (manejo de archivos y alertas)
+- `venv` entorno virtual (virtual environment)
+- `PyInstaller` para generar ejecutables `.exe` (paquetería y ejecución)
 
 ### Proyecto
 
@@ -52,9 +64,11 @@ La aplicación cuenta con una interfaz gráfica moderna desarrollada con Tkinter
 #### Código con Comentarios (Español)
 
 ```python
-#WritterAssistant
+# Writer Assistant
 
-# Importar las bibliotecas necesarias
+# Importar la librerías necesarias
+import sys
+import os
 import tkinter as tk
 from tkinter import scrolledtext, filedialog, messagebox
 import speech_recognition as sr
@@ -63,96 +77,105 @@ import threading
 import webbrowser
 
 # Variable global para controlar la escucha
-hearing = False
+listening = False
 
-# Función para comenzar a escuchar el micrófono en un hilo separado
+# Función para iniciar la escucha del micrófono en un hilo separado
 def start_listening():
-escucha global
-listening = True
-threading.Thread(target=listen, daemon=True).start()
+    global listening
+    listening = True
+    threading.Thread(target=listen, daemon=True).start()
 
-# Función para dejar de escuchar
+# Función para detener la escucha
 def stop_listening():
-escucha global
-hearing = False
+    global listening
+    listening = False
 
 # Función para pausar y reanudar la escucha
 def toggle_listening():
-escucha global
-if listening:
-stop_listening()
-play_pause_button.config(text="▶ Reproducir")
-else:
-start_listening()
-play_pause_button.config(text="⏸ Pausa")
+    global listening
+    if listening:
+        stop_listening()
+        play_pause_button.config(text="▶ Play")
+    else:
+        start_listening()
+        play_pause_button.config(text="⏸ Pause")
 
 # Función que captura la voz y la convierte en texto
 def listen():
-escucha global
-recognizer = mr. Recognizer() # Define el objeto reconocedor
-recognizer. pause_threshold = 1.5 # Ajusta el tiempo de espera antes de procesar la voz
-mic = mr. Microphone()
+    global listening
+    recognizer = sr.Recognizer()  # Definir el objeto recognizer
+    recognizer.pause_threshold = 1.5  # Ajusta el tiempo de espera antes de procesar la voz
+    mic = sr.Microphone()
 
-with mic as source:
-recognizer. adjust_for_ambient_noise(source) # Ajusta para reducir el ruido ambiental
-while listening:
-try:
-print("Escuchando...")
-audio = perceiver. listen(source) # Escucha sin límite de tiempo
-text = perceiver. perceive_google(audio, language='en') # Convierte audio en texto
-text_area. insert(tk. END, text + " \n") # Agrega el texto al área de texto
-text_area. see(tk. END) # Desplazarse hacia abajo automáticamente
-except sr.UnknownValueError:
-pass # Si no entiende la voz, sigue esperando
-except sr.RequestError:
-messagebox.showerror("Error", "No se pudo conectar al servicio de reconocimiento de voz.")
-except Exception as e:
-print(f"Error: {e}")
+    with mic as source:
+        recognizer.adjust_for_ambient_noise(source)  # Ajusta para reducir ruido ambiental
+        while listening:
+            try:
+                print("Escuchando...")
+                audio = recognizer.listen(source)  # Escucha sin un límite de tiempo
+                text = recognizer.recognize_google(audio, language='es')  # Convierte el audio en texto
+                text_area.insert(tk.END, text + " \n")  # Agrega el texto al área de texto
+                text_area.see(tk.END)  # Desplaza automáticamente hacia abajo
+            except sr.UnknownValueError:
+                pass  # Si no entiende la voz, sigue esperando
+            except sr.RequestError:
+                messagebox.showerror("Error", "No se pudo conectar con el servicio de reconocimiento de voz.")
+            except Exception as e:
+                print(f"Error: {e}")
 
-# Función para guardar texto en un archivo de texto
+# Función para guardar el texto en un archivo de texto
 def save_text():
-file_path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Archivos de texto", "*.txt")])
-if file_path:
-with open(file_path, "w", encoding="utf-8") as file:
-file.write(text_area.get("1.0", tk.END)) # Guardar el contenido del área de texto
-messagebox.showinfo("Guardado", "Texto guardado correctamente.")
+    file_path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Archivos de texto", "*.txt")])
+    if file_path:
+        with open(file_path, "w", encoding="utf-8") as file:
+            file.write(text_area.get("1.0", tk.END))  # Guarda el contenido del área de texto
+        messagebox.showinfo("Guardado", "Texto guardado con éxito.")
 
 # Función para abrir un nuevo documento en Google Docs
 def open_google_docs():
-webbrowser.open("https://docs.google.com/document/create")
+    webbrowser.open("https://docs.google.com/document/create")
 
-# Función para copiar texto al portapapeles y pegarlo en Google Docs
+# Función para copiar el texto al portapapeles y pegarlo en Google Docs
 def copy_to_google_docs():
-root.clipboard_clear()
-root.clipboard_append(text_area.get("1.0", tk.END)) # Copiar contenido al portapapeles
-root.update()
-messagebox.showinfo("Copiado", "Texto copiado al portapapeles. Pegar en Google Docs.")
+    root.clipboard_clear()
+    root.clipboard_append(text_area.get("1.0", tk.END))  # Copia el contenido al portapapeles
+    root.update()
+    messagebox.showinfo("Copiado", "Texto copiado al portapapeles. Pega en Google Docs.")
 
-# Configuración de voz femenina para el Asistente
+# Configuración de la voz femenina para Asistente
 def setup_voice():
-global engine
-engine = pyttsx3.init()
-voices = engine.getProperty('voices')
-for voice in voices:
-if "female" in voice.name.lower() or "woman" in voice.name.lower(): # Encontrar una voz femenina
-engine.setProperty('voice', voice.id)
-break
+    global engine
+    engine = pyttsx3.init()
+    voices = engine.getProperty('voices')
+    for voice in voices:
+        if "female" in voice.name.lower() or "mujer" in voice.name.lower():  # Busca una voz femenina
+            engine.setProperty('voice', voice.id)
+            break
 
 # Función para dar la bienvenida al usuario en el hilo principal
 def welcome_message():
-message = "¡Hola! Soy tu asistente de escritura, por favor empieza a hablar y tomaré notas de todo, para que puedas usarlo después."
-threading.Thread(target=speak, args=(message,), daemon=True).start()
+    message = "Hola! soy tu asistente de escritura, por favor comienza a hablar y yo tomare nota de todo, para que puedas utilizarlo luego."
+    threading.Thread(target=speak, args=(message,), daemon=True).start()
 
-# Función para que el asistente hable sin bloquear la interfaz gráfica
+# Función para que la asistente hable sin bloquear la interfaz gráfica
 def speak(message):
-engine.say(message)
-engine.runAndWait()
+    engine.say(message)
+    engine.runAndWait()
+
+# Verificar si el script está ejecutándose como un archivo empaquetado
+if getattr(sys, 'frozen', False):
+    # Si estamos ejecutando desde el .exe empaquetado, la ruta será diferente
+    icon_path = os.path.join(sys._MEIPASS, 'assets', 'writerassist.ico')
+else:
+    # Si estamos ejecutando el script en el entorno de desarrollo
+    icon_path = 'assets/writerassist.ico'
 
 # Configuración de la ventana principal de la aplicación
 root = tk.Tk()
-root.title("Asistente de escritura")
+root.title("Writter Assistant")
+root.iconbitmap(icon_path)
 root.geometry("900x600")
-root.minsize(800, 500) # Tamaño mínimo
+root.minsize(800, 500)  # Tamaño mínimo
 root.config(bg="#e0e0e0")
 
 # Centrar la ventana
@@ -168,16 +191,140 @@ root.geometry(f'{window_width}x{window_height}+{position_right}+{position_top}')
 text_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, font=("Segoe UI", 12), bg="#f9f9fe", fg="#000000", bd=0, relief="solid", highlightthickness=2)
 text_area.grid(row=0, column=0, columnspan=5, sticky="nsew", padx=20, pady=20)
 
-# Configuración de filas y columnas para expandir correctamente
-root.grid_rowconfigure(0, weight=1) # Permite que la fila 0 (text_area) se expanda
-root.grid_columnconfigure(0, weight=1) # Permite que la columna 0 se expanda
+# Configuración de las filas y columnas para que se expandan correctamente
+root.grid_rowconfigure(0, weight=1)  # Deja que la fila 0 (text_area) se expanda
+root.grid_columnconfigure(0, weight=1)  # Deja que la columna 0 se expanda
 
 # Contenedor de botones
-frame_buttons = tk.Frame(root, bg="#e0e0e0") # Crea un marco para contener los botones
-frame_buttons.grid(row=1, column=0, padx=20, pady=10, sticky="ew") # Lo coloca en una nueva fila
+frame_buttons = tk.Frame(root, bg="#e0e0e0")  # Creamos un frame para contener los botones
+frame_buttons.grid(row=1, column=0, padx=20, pady=10, sticky="ew")  # Se coloca en una nueva fila
 
-# Configuraciones comunes para botones
+# Configuración común para los botones (tamaño, colores, fuentes)
+button_config = {
+    'bg': "#f8f8ff",
+    'fg': "#000000",
+    'font': ("Segoe UI", 12),
+    'relief': "solid",
+    'width': 12,
+    'height': 2,
+    'bd': 0,
+    'borderwidth': 0,
+    'highlightthickness': 2
+}
+
+# Botón de Play/Pause
+play_pause_button = tk.Button(frame_buttons, text="⏸ Pause", command=toggle_listening, **button_config, activebackground="#388E3C", activeforeground="white")
+play_pause_button.grid(row=0, column=0, padx=10, pady=5, sticky="ew")
+
+# Botón de Detener
+btn_stop = tk.Button(frame_buttons, text="🛑 Detener", command=stop_listening, **button_config, activebackground="#D32F2F", activeforeground="white")
+btn_stop.grid(row=0, column=1, padx=10, pady=5, sticky="ew")
+
+# Botón para guardar el texto
+btn_save = tk.Button(frame_buttons, text="💾 Guardar", command=save_text, **button_config, activebackground="#1976D2", activeforeground="white")
+btn_save.grid(row=0, column=2, padx=10, pady=5, sticky="ew")
+
+# Botón para abrir un nuevo documento en Google Docs
+btn_docs = tk.Button(frame_buttons, text="📄 Nuevo Docs", command=open_google_docs, **button_config, activebackground="#F57C00", activeforeground="white")
+btn_docs.grid(row=0, column=3, padx=10, pady=5, sticky="ew")
+
+# Botón para copiar a Google Docs (este botón se ajusta para ocupar más espacio horizontal)
+btn_copy_docs = tk.Button(frame_buttons, text="📋 Copiar a Docs", command=copy_to_google_docs, **button_config, activebackground="#1976D2", activeforeground="white")
+btn_copy_docs.grid(row=0, column=4, padx=10, pady=5, sticky="ew", columnspan=2)  # Ocupa más espacio horizontal
+
+# Configuración para las columnas de la grilla, se asegura de que los botones se ajusten bien
+frame_buttons.grid_columnconfigure(0, weight=1)
+frame_buttons.grid_columnconfigure(1, weight=1)
+frame_buttons.grid_columnconfigure(2, weight=1)
+frame_buttons.grid_columnconfigure(3, weight=1)
+frame_buttons.grid_columnconfigure(4, weight=2)  # Para el botón de copiar, con más peso
+
+# Configuración de la voz de Asistente
+setup_voice()
+
+# Dar la bienvenida al usuario después de abrir la ventana
+root.after(1000, welcome_message)
+
+# Iniciar la escucha automáticamente después del saludo
+root.after(3000, start_listening)
+
+# Iniciar la aplicación
+root.mainloop()
 ```
+
+#### Creación del Entorno Virtual (`venv`)
+
+Para aislar las dependencias del proyecto, se recomienda crear un entorno virtual. Sigue estos pasos:
+
+1. Abrir una terminal en la carpeta del proyecto y ejecutar:
+
+```sh
+python -m venv venv
+```
+
+Esto te genera la carpeta del entorno virtual `venv`
+
+2. Activar el entorno virtual:
+
+- En Windows (Bash CMD):
+
+```sh
+venv\Scripts\activate
+```
+
+- En macOS/Linux (También en Git Bash en VSCode dentro de Win10):
+
+```sh
+source venv/bin/activate
+```
+
+3. Instalar las dependencias necesarias:
+
+Antes, asegurarse de haber creado el archivo `requirements.txt` con la lista de librerias/dependecias
+necesarias para que el proyecto se ejecute con su respectiva versión, por ej.: dentro del archivo:
+
+```txt
+SpeechRecognition==3.14.1
+pyttsx3==2.98
+pyaudio==0.2.14
+pyinstaller==6.12.0
+```
+
+Luego:
+
+```sh
+pip install -r requirements.txt
+```
+
+#### Creación del Ejecutable (`.exe`)
+
+Para empaquetar el proyecto en un ejecutable de Windows, sigue estos pasos:
+
+1. Asegurarse de tener instalado `pyinstaller`:
+
+```sh
+pip install pyinstaller
+```
+
+2. Ejecutar el siguiente comando para generar el `.exe`:
+
+```sh
+pyinstaller --onefile --windowed main.py
+```
+
+- `--onefile`: Crea un solo archivo ejecutable.
+
+- `--windowed`: Evita que se abra una consola de terminal al ejecutar.
+
+3. Al ejecutar PyInstaller, se generan varios archivos y carpetas adicionales:
+
+La carpeta `build/` contiene archivos temporales utilizados durante el proceso de empaquetado.
+
+El archivo `.spec` se genera automáticamente con las especificaciones del proyecto, lo podés personalizar si tenes el conocimiento (busca un tutorial de youtube).
+
+La carpeta `dist/` es donde se encuentra el ejecutable final `.exe`, listo para su distribución y uso.
+
+Solo el archivo dentro de `dist/` es necesario para ejecutar la aplicación.
 
 ### Limitaciones
 
