@@ -295,8 +295,6 @@ To isolate project dependencies, it is recommended to create a virtual environme
    pip install -r requirements.txt
    ```
 
-**IMPORTANT:** FOR SECURITY, the GOOGLE API KEY `SpeechRecognition` has been deleted from this repository in: `venv/Lib/site-packages/speech_recognition/recognizers/google.py`, since it is only a sample of code working correctly for educational purposes. For it to work on your `PC` you should start your own `venv`.
-
 #### Creating the Executable (`.exe`)
 
 To package the project into a Windows executable, follow these steps:

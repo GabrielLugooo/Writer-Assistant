@@ -296,8 +296,6 @@ Para aislar las dependencias del proyecto, se recomienda crear un entorno virtua
    pip install -r requirements.txt
    ```
 
-**IMPORTANTE:** POR SEGURIDAD en este repositorio se borró la `API KEY` DE GOOGLE `SpeechRecognition` en : `venv/Lib/site-packages/speech_recognition/recognizers/google.py`, ya que solamente es de muestra de codigo funcionando correctamente con proposito educacional, para que funcione en tu `PC` deberias iniciar tu propio `venv`.
-
 #### Creación del Ejecutable (`.exe`)
 
 Para empaquetar el proyecto en un ejecutable de Windows, sigue estos pasos:
